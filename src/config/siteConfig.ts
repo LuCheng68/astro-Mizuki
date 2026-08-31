@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
 		anime: true, // 番剧页面开关
 		diary: true, // 日记页面开关
 		friends: false, // 友链页面开关
-		projects: true, // 项目页面开关
+		projects: false, // 项目页面开关
 		skills: false, // 技能页面开关
 		timeline: true, // 时间线页面开关
 		albums: true, // 相册页面开关
@@ -132,7 +132,7 @@ export const siteConfig: SiteConfig = {
 				"https://t.alcy.cc/fj",   //栗次元API，风景横图
 				"https://t.alcy.cc/ysz",  //栗次元API，原神自适应
 				"https://t.alcy.cc/lai",  //栗次元API，七濑胡桃				
-				"https://imgapi.xl0408.top/index.php",   //超级小兔的随机图API
+				//"https://imgapi.xl0408.top/index.php",   //超级小兔的随机图API
 				"https://www.dmoe.cc/random.php",  //樱花二次元图片API
 				"/assets/desktop-banner/1.webp",
 				//"/assets/desktop-banner/2.webp",
