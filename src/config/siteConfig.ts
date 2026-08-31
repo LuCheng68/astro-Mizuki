@@ -1,19 +1,19 @@
 import type { SiteConfig } from "../types/config";
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
 	title: "Mizuki",
 	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteURL: "https://astro.moonyue.top/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2025-11-06", // 站点开始运行日期，用于站点统计组件计算运行天数
 	timeZone: "Asia/Shanghai", // 文章日期使用的 IANA 时区，可改为 Asia/Tokyo、Europe/Berlin 等
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 240, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 345, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 
@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "ChengのBlog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -54,8 +54,8 @@ export const siteConfig: SiteConfig = {
 	},
 
 	bangumi: {
-		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
-		fetchOnDev: false, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
+		userId: "chengyue", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
+		fetchOnDev: true, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
 	},
 
 	bilibili: {
@@ -72,7 +72,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+		mode: "bangumi", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
 	},
 
 	// 日记页面 Memos API 地址，留空则使用静态数据
@@ -82,7 +82,7 @@ export const siteConfig: SiteConfig = {
 	postListLayout: {
 		// 默认布局模式："list" 列表模式（单列布局），"grid" 网格模式（双列布局）
 		// 注意：如果侧边栏配置启用了"both"双侧边栏，则无法使用文章列表"grid"网格（双列）布局
-		defaultMode: "list",
+		defaultMode: "grid",
 		// 是否启用布局切换功能
 		enable: true,
 		// 是否允许用户切换布局
@@ -123,31 +123,46 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
+				"http://www.98qy.com/sjbz/api.php",   //98情缘API
+				"https://img.paulzzh.com/touhou/random",   //东方Project随机图片API
+				"https://t.alcy.cc/pc",   //栗次元API，pc横图
+				"https://t.alcy.cc/ycy",  //栗次元API，二次元自适应
+				"https://t.alcy.cc/moez", //栗次元API，萌版自适应
+				"https://t.alcy.cc/moe",  //栗次元API，萌版横图
+				"https://t.alcy.cc/fj",   //栗次元API，风景横图
+				"https://t.alcy.cc/ysz",  //栗次元API，原神自适应
+				"https://t.alcy.cc/lai",  //栗次元API，七濑胡桃				
+				"https://imgapi.xl0408.top/index.php",   //超级小兔的随机图API
+				"https://www.dmoe.cc/random.php",  //樱花二次元图片API
 				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				//"/assets/desktop-banner/2.webp",
+				//"/assets/desktop-banner/3.webp",
+				//"/assets/desktop-banner/4.webp",
 			], // 桌面横幅图片
 			mobile: [
+				"https://t.alcy.cc/mp",   //栗次元API，移动竖图
+				"https://t.alcy.cc/aimp",  //栗次元API，AI竖图
+				"https://t.alcy.cc/moemp", //栗次元API，萌版竖图
+				"https://t.alcy.cc/ysmp",  //栗次元API，原神竖图
 				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
+				//"/assets/mobile-banner/2.webp",
+				//"/assets/mobile-banner/3.webp",
+				//"/assets/mobile-banner/4.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
 		carousel: {
-			enable: true,
-			interval: 3,
+			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
+			interval: 3, // 轮播间隔时间（秒）
 			switchable: true,
 		},
 
 		waves: {
-			enable: true,
-			performanceMode: false,
-			mobileDisable: false,
+			enable: true, // 是否启用水波纹效果(这个功能比较吃性能)
+			performanceMode: false, // 性能模式：减少动画复杂度(性能提升40%)
+			mobileDisable: false, // 移动端禁用
 			switchable: true,
 		},
 
