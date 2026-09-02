@@ -14,23 +14,44 @@ export type DeviceCategory = Record<string, Device[]> & {
 };
 
 export const devicesData: DeviceCategory = {
-	OnePlus: [
+	XiaoMi: [
 		{
-			name: "OnePlus 13T",
-			image: "/images/device/oneplus13t.webp",
-			specs: "Gray / 16G + 1TB",
-			description: "Flagship performance, Hasselblad imaging, 80W SuperVOOC.",
-			link: "https://www.oneplus.com/cn/13t",
+			name: "XiaoMi 15",
+			image: "/images/device/xiaomi15.webp",
+			specs: "Lilac / 16G + 512GB",
+			description: "",
+			link: "https://www.mi.com/prod/xiaomi-15",
+		},		
+		{
+			name: "XiaoMi MIX 4",
+			image: "/images/device/MIX4.webp",
+			specs: "Gray / 12G + 256GB",
+			description: "MIX系列最后的绝唱",
+			link: "https://www.mi.com/mix4",
+		},		
+		{
+			name: "Redmi K20 PRO",
+			image: "/images/device/RedmiK20Pro.webp",
+			specs: "Red / 8G + 256GB",
+			description: "真旗舰 敢K.O.",
+			link: "https://www.mi.com/redmik20pro",
+		},
+		{
+			name: "XiaoMi Pad 5 PRO",
+			image: "/images/device/xiaomipad5pro.webp",
+			specs: "Black / 6G + 128GB",
+			description: "",
+			link: "https://www.mi.com/xiaomipad5pro",
 		},
 	],
-	Router: [
+	Cudy: [
 		{
-			name: "GL-MT3000",
-			image: "/images/device/mt3000.webp",
-			specs: "1000Mbps / 2.5G",
+			name: "TR3000",
+			image: "/images/device/tr3000.webp",
+			specs: "2402Mbps / 2.5G / 256MB ROM",
 			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
-			link: "https://www.gl-inet.cn/products/gl-mt3000/",
+				"",
+			link: "https://www.cudy.com/zh-cn/products/tr3000-1-0",
 		},
 	],
 };
