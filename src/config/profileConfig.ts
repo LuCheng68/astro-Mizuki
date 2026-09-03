@@ -3,7 +3,7 @@ import type { ProfileConfig } from "../types/config";
 // 个人资料配置
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/52990981.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
+	name: "Cheng",
 	bio: "世界は大きい、君は行かなければならない",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
@@ -23,7 +23,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/LuCheng68/astro-Mizuki",
 		},
 /* 		{
 			name: "Codeberg",
